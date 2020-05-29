@@ -3,7 +3,7 @@ import './style.less';
 
 export default function MainOffer () {
   return (
-    <div className="offer">
+    <div className="offer light">
       <h1 className="offer__title">
         PSD файл с макетом. Макет разбит по слоям и сгрупированн по папкам:
       </h1>

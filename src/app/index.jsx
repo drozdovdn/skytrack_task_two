@@ -10,6 +10,7 @@ import More from '../components/more';
 import LeftMenu from '../components/sidebar-menu';
 import AsideBarFooter from '../components/sidebar-footer';
 import MainOffer from '../components/main-offer';
+import MainContentBlock from '../components/main-content-block';
 
 class App extends Component{
 
@@ -38,6 +39,15 @@ class App extends Component{
               </aside>
               <main className="main">
                 <MainOffer />
+                <div className="main__content">
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                    <MainContentBlock/>
+                </div>
               </main>
             </div>
           </div>
