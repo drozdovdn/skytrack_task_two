@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import * as Actions from './actions';
+import './style.less'
 
 class App extends Component{
 
@@ -11,7 +12,7 @@ class App extends Component{
 
   render() {
     return (
-      <div>
+      <div className='app'>
         <h1>My app</h1>
       </div>
     );
