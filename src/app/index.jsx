@@ -11,6 +11,8 @@ import LeftMenu from '../components/sidebar-menu';
 import AsideBarFooter from '../components/sidebar-footer';
 import MainOffer from '../components/main-offer';
 import MainContentBlock from '../components/main-content-block';
+import MainFooterLeft from '../components/main-footer-left';
+import MainFooterRight from '../components/main-footer-right';
 
 class App extends Component{
 
@@ -40,18 +42,25 @@ class App extends Component{
               <main className="main">
                 <MainOffer />
                 <div className="main__content">
-                    <MainContentBlock/>
-                    <MainContentBlock/>
-                    <MainContentBlock/>
-                    <MainContentBlock/>
-                    <MainContentBlock/>
-                    <MainContentBlock/>
-                    <MainContentBlock/>
+                    <MainContentBlock />
+                    <MainContentBlock />
+                    <MainContentBlock />
+                    <MainContentBlock />
+                    <MainContentBlock />
+                    <MainContentBlock />
+                    <MainContentBlock />
+                </div>
+                <div className="main__footer">
+                    <MainFooterLeft />
+                    <MainFooterRight />
                 </div>
               </main>
             </div>
           </div>
         </section>
+        <footer className="footer">
+
+        </footer>
       </>
     );
   }
@@ -59,7 +68,6 @@ class App extends Component{
 
 const mapStateToProps = (state) => {
   return {
-
   }
 };
 
