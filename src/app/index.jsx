@@ -7,7 +7,8 @@ import './style.less'
 import Logo from './../components/logo'
 import Contact from '../components/contact';
 import More from '../components/more';
-import LeftMenu from '../components/asidebar-menu';
+import LeftMenu from '../components/sidebar-menu';
+import AsideBarFooter from '../components/sidebar-footer';
 
 class App extends Component{
 
@@ -30,8 +31,9 @@ class App extends Component{
         <section className="main">
           <div className="container">
             <div className="content">
-              <aside>
+              <aside className="side-bar">
                 <LeftMenu />
+                <AsideBarFooter />
               </aside>
               <main>
 

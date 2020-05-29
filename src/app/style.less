@@ -6,7 +6,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p {
 ul, li {
   display: block;
 }
-h1, h2, h3, h4, h5, h6, ul, li, div, section, form, input, button, span, p, img, a {
+h1, h2, h3, h4, h5, h6, ul, li, div, section, form, input, button, span, p, img, a, nav {
   box-sizing: border-box;
 }
 a, a:hover, a:active, a:focus {
@@ -48,4 +48,10 @@ body {
 // ASIDE
 .content {
   padding: 22px 0 25px;
+  display: flex;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
