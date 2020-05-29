@@ -5,6 +5,7 @@ import * as Actions from './actions';
 import './style.less'
 
 import Logo from './../components/logo'
+import Contact from '../components/contact';
 
 class App extends Component{
 
@@ -18,6 +19,7 @@ class App extends Component{
         <div className="container">
           <div className="head">
             <Logo/>
+            <Contact/>
           </div>
         </div>
       </header>
