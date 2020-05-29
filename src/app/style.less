@@ -15,9 +15,10 @@ a, a:hover, a:active, a:focus {
 input:hover, input:focus {
   outline: none;
 }
-
+// COLORS
 @dark-grey-color: #777777;
 @light-grey-color: #dcdcdc;
+@line-color: #696969;
 
 .dark {
   background: @dark-grey-color;
@@ -32,7 +33,6 @@ body {
   line-height: 22px;
 }
 .header {
-
 }
 .container {
   width: 960px;
@@ -43,4 +43,5 @@ body {
   padding: 24px 0 19px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid @line-color;
 }
