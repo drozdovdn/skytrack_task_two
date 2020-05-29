@@ -15,16 +15,12 @@ a, a:hover, a:active, a:focus {
 input:hover, input:focus {
   outline: none;
 }
-// COLORS
-@dark-grey-color: #777777;
-@light-grey-color: #dcdcdc;
-@line-color: #696969;
 
 .dark {
-  background: @dark-grey-color;
+  background: #777777;
 }
 .light {
-  background: @light-grey-color;
+  background: #dcdcdc;
 }
 // HEADER
 body {
@@ -43,7 +39,7 @@ body {
   padding: 24px 0 19px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid @line-color;
+  border-bottom: 1px solid #696969;
 }
 // ASIDE
 .content {
@@ -68,4 +64,11 @@ body {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+.footer {
+  color: #ffffff;
+}
+.foot {
+  border-top: 1px solid #696969;
+  padding: 25px 0;
 }
