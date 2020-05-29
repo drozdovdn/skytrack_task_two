@@ -9,6 +9,7 @@ import Contact from '../components/contact';
 import More from '../components/more';
 import LeftMenu from '../components/sidebar-menu';
 import AsideBarFooter from '../components/sidebar-footer';
+import MainOffer from '../components/main-offer';
 
 class App extends Component{
 
@@ -35,8 +36,8 @@ class App extends Component{
                 <LeftMenu />
                 <AsideBarFooter />
               </aside>
-              <main>
-
+              <main className="main">
+                <MainOffer />
               </main>
             </div>
           </div>

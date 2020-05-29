@@ -1,0 +1,30 @@
+.offer {
+  width: 100%;
+  background: #dcdcdc;
+  padding: 20px;
+  color: #777777;
+}
+.offer__title {
+  font-size: 14px;
+}
+.offer__list {
+  padding: 30px 0 30px 40px;
+}
+.offer__list-item {
+  position: relative;
+  span {
+    font-weight: bold;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: #777777;
+    left: -6px;
+    top: 10px;
+  }
+}
+.offer__text {
+
+}

@@ -19,7 +19,7 @@ export const initState = {
       {id: 9, title: 'Интернет-магазины'},
       {id: 10, title: 'Создание логотипов'},
     ]
-  }
+  },
 };
 
 export function appReducer(state = initState, actions) {
