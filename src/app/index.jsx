@@ -6,6 +6,7 @@ import './style.less'
 
 import Logo from './../components/logo'
 import Contact from '../components/contact';
+import More from '../components/more';
 
 class App extends Component{
 
@@ -20,6 +21,7 @@ class App extends Component{
           <div className="head">
             <Logo/>
             <Contact/>
+            <More/>
           </div>
         </div>
       </header>
