@@ -3,17 +3,18 @@ import { connect } from 'react-redux';
 import './style.less';
 class More extends Component {
   render() {
+    const {tel, mail, site} = this.props.moreData;
     return (
       <div className="head__more dark">
         <ul className="head__more-content">
           <li>
-            <a href={'tel:'+this.props.moreData.tel}>{this.props.moreData.tel}</a>
+            <a href={'tel:'+tel}>{tel}</a>
           </li>
           <li>
-            <a href={'mailto:'+this.props.moreData.mail}>{this.props.moreData.mail}</a>
+            <a href={'mailto:'+mail}>{mail}</a>
           </li>
           <li>
-            <a href={this.props.moreData.site}>{this.props.moreData.site}</a>
+            <a href={site}>{site}</a>
           </li>
         </ul>
       </div>
