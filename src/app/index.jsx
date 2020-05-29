@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import * as Actions from './actions';
 import './style.less'
 
+import Logo from './../components/logo'
+
 class App extends Component{
 
   static propTypes = {
@@ -12,9 +14,13 @@ class App extends Component{
 
   render() {
     return (
-      <div className='app'>
-        <h1>My app</h1>
-      </div>
+      <header className="header">
+        <div className="container">
+          <div className="head">
+            <Logo/>
+          </div>
+        </div>
+      </header>
     );
   }
 }
