@@ -1,0 +1,27 @@
+.foot__center {
+  width: 297px;
+  height: 180px;
+  padding: 18px 0 16px 35px;
+}
+.foot__center-list {
+  li {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      bottom: 7px;
+      left: -10px;
+      background: #ffffff;
+    }
+    a {
+      position: relative;
+      color: #ffffff;
+      transition: all 0.5s ease;
+      &:hover {
+        color: #c1c1c1;
+      }
+    }
+  }
+}

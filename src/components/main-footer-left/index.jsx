@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.less';
 
-
 export default function MainFooterLeft() {
   return (
     <div className="main-footer-left light">

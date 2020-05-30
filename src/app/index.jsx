@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types';
-import * as Actions from './actions';
-import './style.less'
+import './style.less';
 
 import Logo from './../components/logo'
 import Contact from '../components/contact';
@@ -14,13 +11,11 @@ import MainContentBlock from '../components/main-content-block';
 import MainFooterLeft from '../components/main-footer-left';
 import MainFooterRight from '../components/main-footer-right';
 import FooterLeft from '../components/footer-left';
+import FooterCenter from '../components/footer-center';
+import FooterRightTop from '../components/footer-right-top';
+import FooterRightBottom from '../components/footer-reght-bottom';
 
-class App extends Component{
-
-  static propTypes = {
-
-  };
-
+export default class App extends Component{
   render() {
     return (
       <>
@@ -63,6 +58,11 @@ class App extends Component{
           <div className="container">
             <div className="foot">
               <FooterLeft />
+              <FooterCenter />
+              <div className="foot__right">
+                <FooterRightTop />
+                <FooterRightBottom />
+              </div>
             </div>
           </div>
         </footer>
@@ -71,9 +71,3 @@ class App extends Component{
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-  }
-};
-
-export default connect(mapStateToProps, Actions)(App);

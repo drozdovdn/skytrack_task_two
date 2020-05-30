@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './style.less';
 
@@ -6,12 +6,12 @@ class FooterLeft extends Component {
   render() {
     const { points } = this.props;
     return (
-      <div className="footer__left dark">
+      <div className="foot__left dark">
         <ul>
           {
-            points.map(point => {
+            points.map( point => {
               return (
-                  <li key={point.id}>{point.title}</li>
+                  <li key={ point.id }>{ point.title }</li>
               )
             })
           }
